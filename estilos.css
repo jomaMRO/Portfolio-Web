@@ -1,0 +1,427 @@
+/* Estilos generales para la página */
+body {
+    background-color: #202022;
+    /* Color de fondo claro */
+    color: #333;
+    /* Color de texto oscuro para contraste */
+    font-family: "Open Sans", sans-serif;
+    /* Tipo de fuente genérica */
+    font-size: 16px;
+    /* Tamaño de fuente estándar */
+    text-align: center;
+    /* Alineación de texto central para todo el contenido */
+    margin: 0;
+    padding: 0;
+
+    h1,
+    h2,
+    h3,
+    p,
+    span {
+        color: white;
+        /* Color azul para los títulos, similar al color primario de Bootstrap */
+    }
+    
+    /* rgb(103, 172, 101);
+    rgb(90, 180, 120);
+     */
+}
+
+/* general */
+.badge.custom-badge-color {
+    background-color: rgb(255, 137, 3) !important; /* Nuevo color de fondo */
+    color: #ffffff; /* Color del texto */
+}
+.badge.custom-badge-color2 {
+    background-color: purple !important; /* Nuevo color de fondo */
+    color: #ffffff; /* Color del texto */
+}
+
+.custom-container {
+    width: 70%;
+    /* o cualquier otro valor que necesites */
+}
+
+.container {
+    padding: 20px;
+    /* Espacio interno para cada sección */
+}
+
+.titulo-conf {
+    margin-right: 425px;
+    font-size: 1.50rem;
+    font-weight: 690;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    text-decoration-thickness: 7px;
+    text-underline-offset: 5px;
+   
+    /*Ajusta la distancia entre el texto y el subrayado */
+
+}
+.card-img-top {
+    width: 20%;
+    /* Hace que la imagen llene el ancho del contenedor de la tarjeta */
+    display: block;
+    margin: auto;
+    /* Centra la imagen horizontalmente */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+}
+
+.badge-skills {
+    padding: 0.10em 0.5em; /* Ajusta el espaciado interior para hacerlos más grandes */
+    font-size: 0.80em; /* Aumenta el tamaño de la fuente */
+    line-height: normal; /* Ajusta la altura de línea si es necesario */
+}
+
+
+
+/* ----- Barra de navegación --------- */
+.navbar {
+    margin-bottom: 75px;
+    /* Espacio debajo de la barra de navegación */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Negro con opacidad */
+    width: 100%;
+    /* Asegura que la barra de navegación ocupe el ancho completo */
+    top: 0;
+    /* Alinea la barra de navegación en la parte superior de la página */
+    z-index: 1000;
+    /* Asegura que la barra de navegación esté sobre otros elementos */
+    backdrop-filter: blur(10px);
+    /* Aplica un desenfoque de 10px al fondo */
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    /* Asegura que todos los enlaces y la marca sean blancos */
+    opacity: 1;
+    /* Asegura que el color no tenga transparencia adicional */
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 20px;
+    /* Añade margen derecho a cada enlace */
+    margin-left: 20px;
+    /* Añade margen izquierdo a cada enlace */
+}
+
+.navbar .container-fluid {
+    padding-right: 100px;
+    /* Reduce el padding izquierdo para mover el contenido hacia la izquierda */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Añade una sombra de texto blanca */
+}
+/* Estilos para el logo "JM" */
+.navbar .navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Usa una fuente elegante y moderna */
+    font-size: 1.1rem; /* Tamaño de la fuente más grande */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    letter-spacing: 0.1rem; /* Espaciado entre caracteres para una apariencia más distinguida */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas para más impacto */
+    color: #ffffff; /* Asegura que el color sea blanco */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
+}
+
+
+/* --------------juego----------------- */
+.btn-image {
+    cursor: pointer;
+    /* Cambia el cursor para indicar que es clickable */
+    width: 100px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+}
+
+#flappyBirdGame {
+    width: 480px;
+    /* Establece el ancho a 480 píxeles */
+    height: 200px;
+    /* Mantiene la altura en 200 píxeles */
+    background-color: #202022;
+    /* Color de fondo para el área del juego */
+    display: block;
+    /* Asegura que el canvas ocupe su propio espacio */
+    margin: auto;
+    /* Centrar el canvas horizontalmente */
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    /* Usa el 100% del ancho del contenedor padre, hasta un máximo de 480px */
+    max-width: 480px;
+    /* Máximo ancho del contenedor */
+    height: 200px;
+    /* Altura fija del contenedor */
+    margin: auto;
+    /* Centrar el contenedor horizontalmente */
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+#playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* ----estilos nombre ----*/
+
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Un azul sólido para mayor visibilidad */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado interno */
+    margin: 20px auto;
+    /* Margen alrededor y centrado horizontalmente */
+    width: 39%;
+    /* Ancho del recuadro ajustado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Opcional: sombra para más profundidad */
+    color: white;
+    /* Color de texto para contraste con fondo oscuro */
+    font-size: 14px;
+    
+}
+
+
+
+.card {
+    margin: 0 auto;
+    /* Centra las tarjetas horizontalmente dentro de su columna */
+    margin-bottom: 20px;
+    /* Espacio debajo de cada tarjeta */
+    
+
+}
+
+.img-frame {
+    border: 5px solid whitesmoke;
+    /* Asume que ya has añadido un borde */
+    display: block;
+    /* Asegura que la imagen no tenga espacio adicional debajo que suelen tener las imágenes inline */
+    margin: 0 auto;
+    /* Elimina cualquier margen y centra la imagen si es necesario */
+    width: 100%;
+    /* Asegura que la imagen se estire para ocupar el 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+    padding: 0;
+    /* Elimina el padding si hay alguno */
+}
+
+.img-size {
+    width: 120px;
+    /* Ajusta este valor según el tamaño deseado */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
+}
+
+
+
+/* ----about ----*/
+.container-about p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+/* ----skills ----*/
+.skills-tarjetas {
+    margin-top: 40px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+.scaled-card1 {
+    transform: scale(0.8);
+    transform-origin: 1100px 20px;
+}
+
+.scaled-card2 {
+    transform: scale(0.8);
+    transform-origin: 450px 20px;
+}
+
+.scaled-card3 {
+    transform: scale(0.8);
+    transform-origin: -250px 20px;
+}
+
+.scaled-card4 {
+    transform: scale(0.8);
+    transform-origin: -950px 20px;
+}
+
+.circulo-fondo{
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+    border-radius: 50%; /* Hace que el fondo sea completamente circular */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Opcional: añade sombra para más profundidad */
+}
+
+/* ----proyecto ----*/
+
+.tight-padding1 {
+    padding-right: 5px; /* Reduce el padding derecho */
+    padding-left: 290px; /* Reduce el padding izquierdo */
+}
+
+.tight-padding2 {
+    padding-right: 290px; /* Reduce el padding derecho */
+    padding-left: 5px; /* Reduce el padding izquierdo */
+}
+
+.card-proyecto {
+    width: 250px; /* Ancho fijo inicial, ajustable según necesites */
+    height: 300px; /* Altura fija inicial, ajustable según necesites */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    border: none; /* Elimina el borde */
+    border-radius: 0.25rem; /* Opcional: bordes redondeados */
+    margin-bottom: 30px; /* Espacio entre tarjetas */
+    background-color: transparent; /* Color de fondo inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para transform y sombra */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más oscura y más grande */
+   
+}
+
+.card-proyecto:hover {
+    transform: scale(1.04); /* Aumenta el tamaño de la tarjeta un 5% */    
+
+}
+
+.card-proyecto p {
+    /* Estilos para todos los párrafos dentro de .card-proyecto */
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.card-proyecto h5 {
+    /* Estilos para todos los párrafos dentro de .card-proyecto */
+    color: white;
+    font-weight: 600; /* Un grosor más fuerte que el bold estándar */
+}
+
+.card-proyecto-img {
+    width: 90%;
+    height: 50%; /* Ajusta esto según la proporción que desees para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio asignado sin deformarse */
+}
+
+.card-proyecto-body {
+    height: 40%; /* Ajusta en proporción a la altura asignada a la imagen */
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido es demasiado */
+    padding: 15px; /* Espacio interior para el contenido del cuerpo de la tarjeta */
+}
+
+
+
+/* ----contacto ----*/
+
+
+.contacto a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.contacto a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse */
+}
+
+.bi {
+    font-size: 1.5rem;  /* Ajusta el tamaño del icono */
+    color: rgb(90, 180, 120);    /* Ajusta el color del icono, usando un color azul de ejemplo */
+}
+
+
+
+
+/* --------responsive------ */
+
+
+
+@media (max-width: 576px) {
+
+    .navbar .container-fluid {
+        padding-right: 20px;
+        /* Reduce el padding izquierdo para mover el contenido hacia la izquierda */
+    }
+    #flappyBirdGame {
+        width: 400px;
+        /* Establece el ancho a 480 píxeles */
+        height: 195px;
+    }
+
+    .intro {
+        width: 80%;
+    }
+
+
+
+    .tight-padding1 {
+        padding-right: 5px;
+        /* Reduce el padding derecho */
+        padding-left: 5px;
+        /* Reduce el padding izquierdo */
+    }
+
+    .tight-padding2 {
+        padding-right: 5px;
+        /* Reduce el padding derecho */
+        padding-left: 5px;
+        /* Reduce el padding izquierdo */
+    }
+
+    .scaled-card1,
+    .scaled-card2,
+    .scaled-card3,
+    .scaled-card4 {
+        transform: none;
+        transform-origin: center;
+        /*o puedes usar 'initial' para restablecer al valor predeterminado del navegador */
+    }
+
+    .scaled-card1 {
+        transform: scale(0.95);
+        transform-origin: -250px 20px;
+    }
+
+    .scaled-card3 {
+        transform: scale(0.95);
+        transform-origin: -250px 20px;
+    }
+
+    .titulo-conf {
+        margin-right: 280px;
+
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .navbar .container-fluid {
+        padding-right: 45px;
+        /* Reduce el padding izquierdo para mover el contenido hacia la izquierda */
+    }
+    #flappyBirdGame {
+        width: 380px;
+        /* Establece el ancho a 480 píxeles */
+        height: 190px;
+    }
+}
