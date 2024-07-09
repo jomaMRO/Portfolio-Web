@@ -328,6 +328,14 @@ body {
     padding: 15px; /* Espacio interior para el contenido del cuerpo de la tarjeta */
 }
 
+.card-link {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color de texto del elemento padre */
+}
+
+.card-link:hover {
+    text-decoration: none; /* Asegura que no haya subrayado al hacer hover */
+}
 
 
 /* ----contacto ----*/
